@@ -67,6 +67,18 @@ $(document).on("keypress", function() {
   }
 });
 
+$(".mobile-btn").on("click", function() {
+  if (!started) {
+    gamePattern = [];
+    userClickedPattern = [];
+    clicks = 0;
+    started = true;
+    $(".unclickable").css("display", "none");
+    $(".mobile-btn").css("display", "none");
+    nextSequence();
+  }
+});
+
 // Function to check answer
 function checkAnswer() {
   console.log("gamePattern: " + gamePattern);
@@ -81,6 +93,7 @@ function checkAnswer() {
     level = 0;
     var sound = new Audio("sounds/wrong.mp3");
     sound.play();
+    $(".mobile-btn").css("display", "block");
     return;
   } else {
     console.log("success - clicks = " + clicks);
