@@ -80,6 +80,9 @@ body {
 }
 
 @media only screen and (max-width: 1121px) {
+  .container-fluid {
+    padding-top: 30px;
+  }
   .container {
     width: 100%;
   }
@@ -89,6 +92,9 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .container-fluid {
+    padding-top: 60px;
+  }
   #level-title {
     font-size: 2rem;
   }
