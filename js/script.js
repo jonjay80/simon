@@ -107,10 +107,6 @@ function checkAnswer() {
   }
 }
 
-var viewportH = window.screen.height;
-var padding = (viewportH - 700) / 4;
-$(".container-fluid").css("padding", padding + "px 0");
-
 
 
 
