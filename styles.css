@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+.unclickable {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.btn:hover, .mobile-btn:hover {
+  cursor: pointer;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.mobile-btn {
+    font-size: 4rem;
+    border: 7px black solid;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    z-index: 200;
+    display: none;
+    margin: 30px auto 0 auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 1121px) {
+  .container {
+    width: 100%;
+  }
+  .mobile-btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #level-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .mobile-btn {
+    display: block;
+  }
+
+}
